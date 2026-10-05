@@ -1,0 +1,4 @@
+folds.json
+__pycache__/
+*.class
+classes/
