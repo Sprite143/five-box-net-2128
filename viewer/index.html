@@ -190,7 +190,7 @@ const DATA = {"cells":[[57,-30],[57,-29],[57,-28],[58,-32],[58,-31],[58,-30],[58
     if (autoZoom) zoomTo(mode === "all" ? ease(t) : t);
     const d = DATA.boxes[box].box;
     hud.textContent = mode === "all" ? `${d.join(" × ")} · all creases together · ${Math.round(t * 100)}%`
-      : `${d.join(" × ")} · fold line ${Math.min(rank[box].K, Math.ceil(t * rank[box].K))} of ${rank[box].K}, from the middle outward`;
+      : `${d.join(" × ")} · fold line ${Math.min(rank[box].K, Math.ceil(t * rank[box].K))} of ${rank[box].K}, from one end of the strip`;
     prog.value = Math.round(t * 1000);
   }
   function resize() {
